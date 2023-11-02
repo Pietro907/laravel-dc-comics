@@ -3,7 +3,6 @@
 namespace Database\Seeders;
 
 use App\Models\Comics;
-use App\Http\Controllers\Admin\ComicsController;
 use Illuminate\Database\Console\Seeds\WithoutModelEvents;
 use Illuminate\Database\Seeder;
 
