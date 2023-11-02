@@ -19,7 +19,7 @@
 
    <h1>Welcome</h1>
    @foreach ($comics as $comic)
-       <p><?php $comic->title ?></p>
+       <p><?= $comic->title ?></p>
    @endforeach
 
 </body>
