@@ -17,4 +17,4 @@ Route::get('/', [PageController::class, 'index'])->name('home');
 Route::get('about', [PageController::class, 'about'])->name('about');
 Route::get('comics', [PageController::class , 'comics'])->name('guests.comics');
 
-/* Route::resource('admin/comics', PageController::class); */
+Route::resource('guest/comics', PageController::class);

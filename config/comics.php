@@ -1,5 +1,20 @@
 <?php
 
+$navHeader = [
+    'link' => 'characters', 
+    'link' => 'comics',
+    'link' => 'movies',
+    'link' => 'tv',
+    'link' => 'games',
+    'link' => 'collectibles',
+    'link' => 'videos',
+    'link' => 'fans',
+    'link' => 'news',
+    'link' => 'shop',
+];
+
+
+
 $comics = [
     [
         "title" => "Action Comics #1000: The Deluxe Edition",
