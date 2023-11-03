@@ -88,46 +88,51 @@
 
   /* AppJumbotron */
 
-  
+#jumbo{
+  background: url('https://picsum.photos/300/400');
+  background-repeat: no-repeat;
+  height: 500px;
+}
+
 .jumbotron {
-    background-color: #0282f9;
-  }
+  background-color: #0282f9;
+}
+
+.w_jumbo {
+  width: 70%;
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+}
+.col-3 {
+  width: calc(100% / 12 * 3);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 1rem 0;
+  color: #ffffff;
+}
+.image {
+  width: 40px;
+  height: 40px;
+  aspect-ratio: 1 / 1;
+  object-fit: contain;
+}
+
+/* space */
+
+.ms {
+  margin-left: 0.5rem;
+}
+.card {
   
-  .w_jumbo {
-    width: 70%;
-    margin: 0 auto;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  
-  }
-  .col-3 {
-    width: calc(100% / 12 * 3);
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding: 1rem 0;
-    color: #ffffff;
-  }
-  .image {
-    width: 40px;
-    height: 40px;
-    aspect-ratio: 1 / 1;
-    object-fit: contain;
-  }
-  
-  /* space */
-  
-  .ms {
-    margin-left: 0.5rem;
-  }
-  .card {
-    
-    width: 100%;
-  }
-  
-  /* color */
-  
-  .bg_black {
-    background-color: black;
-  }
+  width: 100%;
+}
+
+/* color */
+
+.bg_black {
+  background-color: black;
+}

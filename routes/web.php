@@ -1,7 +1,10 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
+//Importo il PageController  
 use App\HTTP\Controllers\Guest\PageController;
+//Importoi l'AdminController
+use App\HTTP\Controllers\Guest\AdminController;
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -13,8 +16,11 @@ use App\HTTP\Controllers\Guest\PageController;
 |
 */
 
+//Route page home (welcome.blade.php) page utente
 Route::get('/', [PageController::class, 'index'])->name('home');
-Route::get('about', [PageController::class, 'about'])->name('about');
-Route::get('comics', [PageController::class , 'comics'])->name('guests.comics');
 
-Route::resource('guest/comics', PageController::class);
+//Route page admin
+Route::get('/admin', [AdminController::class, 'index'])->name('admin');
+
+//Ruote resource admin/comics in AdminController
+Route::resource('admin/comics', AdminController::class);

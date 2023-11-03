@@ -17,7 +17,7 @@
 
 <body>
 
-    <header>
+  {{--   <header>
         <div class="container_header">
             <div class="row d-flex justify-content-center align-content-center">
                 <div class="col-3">
@@ -57,16 +57,18 @@
                         </div>
                     </nav> --}}
 
-                </div>
+             {{--    </div>
             </div>
 
-        </div>
+        </div> 
 
-    </header>
+    </header>--}}
 
     <main>
+        
+        @yield('main_contents')
 
-        <section id="content">
+      {{--   <section id="content">
 
             <div class="col-2">
 
@@ -129,11 +131,11 @@
                 </div>
             </div>
 
-        </section>
+        </section> --}}
 
     </main>
 
-    <footer>
+{{--     <footer>
 
         <div class="container container_img">
 
@@ -192,7 +194,7 @@
 
         </div>
 
-    </footer>
+    </footer> --}}
 
 
 
