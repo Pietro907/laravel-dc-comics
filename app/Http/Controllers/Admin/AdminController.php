@@ -99,6 +99,8 @@ class AdminController extends Controller
      */
     public function destroy(Comics $comic)
     {
-        //
+        $comic->delete();
+
+        return redirect()->route('comics.index');
     }
 }
