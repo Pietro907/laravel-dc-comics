@@ -10,15 +10,11 @@ class PageController extends Controller
 {
     //qui do la rotta per welcome, pagina che visulizzerà l'utente
     function index(){
+        //Prendo tutti i dati dal Model Comics e li inserisco nella variabile comics
         $comics = Comics::all();
-        return view('welcome', compact('comics'));
-        //return view('welcome', ['comics' => Comics]);
-    }
-/*     function about(){
-        return view('about');
+
+        return view('pages.admin.comics.index', compact('comics'));
+       
     }
 
-    function comics(){
-        return view('comics');
-    } */
 }

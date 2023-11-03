@@ -4,7 +4,7 @@ use Illuminate\Support\Facades\Route;
 //Importo il PageController  
 use App\HTTP\Controllers\Guest\PageController;
 //Importoi l'AdminController
-use App\HTTP\Controllers\Guest\AdminController;
+use App\HTTP\Controllers\Admin\AdminController;
 /*
 |--------------------------------------------------------------------------
 | Web Routes

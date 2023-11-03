@@ -66,7 +66,7 @@
 
     <main>
         
-        @yield('main_contents')
+        @yield('main_content')
 
       {{--   <section id="content">
 
@@ -198,10 +198,7 @@
 
 
 
-    <h1>Welcome</h1>
-    @foreach ($comics as $comic)
-        <p><?= $comic->title ?></p>
-    @endforeach
+
 
 </body>
 

@@ -46,7 +46,6 @@ class AdminController extends Controller
         }
       
         // inserisco i dati contenuti nel seeder (ComicsSeeder.php)
-        
         $newComic ->title = $request->title;
         $newComic ->description = $request->description;
         $newComic ->price = $request->price;
@@ -58,10 +57,8 @@ class AdminController extends Controller
         $newComic->save(); 
 
         //diciamo di passarceli alla pagina index
-
-
-
         return to_route('comics.index');
+
     }
 
     /**
