@@ -37,12 +37,17 @@ class AdminController extends Controller
     public function store(Request $request)
     {
         
+        $validated = $request->validate([
+            'title' => 'required|max:50|min:3',
+            'thumb' => 'image|max:300',
+        ]);
+
         $newComic = new Comics();
 
         if ($request->has('thumb')) {
             $file_path =  Storage::put('comics_images', $request->thumb);
             
-            $newComic ->thumb = $file_path;
+            $newComic->thumb = $file_path;
         }
       
         // inserisco i dati contenuti nel seeder (ComicsSeeder.php)
@@ -58,6 +63,9 @@ class AdminController extends Controller
 
         //diciamo di passarceli alla pagina index
         return to_route('comics.index');
+        
+
+        dd($validated);
 
     }
 
