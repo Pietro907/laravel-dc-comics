@@ -10,7 +10,8 @@
     @else
         <img class="card-img-top" src="{{$comic->thumb}}" alt="">
     @endif --}}
-    <img class="card-img-top" src="{{ Str::startsWith($comic->thumb, 'comics_images') ? asset('storage/' .  $comic->thumb) :  $comic->thumb }}" alt="">
+    
+    <img class="card-img-top" src="{{ Str::startsWith($comic->thumb, 'thumb') ? asset('storage/' . $comic->thumb) : $comic->thumb }}" alt="">
 
     <div class="card-body">
         <h5>Titolo:</h5>
